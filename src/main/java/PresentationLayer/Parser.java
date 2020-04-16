@@ -117,7 +117,7 @@ public class Parser {
         }
         if(quantity>p.getStock_quantity())
         {
-            reportGenerator.generateBill("Not enough "+prod+"s in stock","We are sorry but your order cannot be processed! At the moment, product "+prod+" is not available in this quantity. Current stock quantity is: "+p.getStock_quantity());
+            reportGenerator.generateBill("Not enough "+prod+"s in stock","At the moment,product "+prod+" is not available. Current stock quantity is:"+p.getStock_quantity());
             return ;
         }
 
